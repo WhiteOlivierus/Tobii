@@ -6,6 +6,7 @@ using System.Collections;
 using Tobii.Gaming;
 using UnityEngine;
 
+
 public class InteractableGazeAware : GazeAware
 {
 	public string Label;
