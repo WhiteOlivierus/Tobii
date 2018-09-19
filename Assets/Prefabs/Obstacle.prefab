@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33661481017138640}
   - component: {fileID: 23407440464428502}
   - component: {fileID: 65647588910748182}
+  - component: {fileID: 114512773781441456}
+  - component: {fileID: 114902063264445704}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -96,3 +98,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114512773781441456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604245300879968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a9666271976b6e4d97a44c6d14108f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initTimeBeforeSwitch: 0
+  gainPoints: 1
+  colorBeforeSwitch: {r: 0, g: 0, b: 0, a: 0}
+  colorAfterSwitch: {r: 0, g: 0, b: 0, a: 0}
+  timeBeforeSwitchText: {fileID: 0}
+--- !u!114 &114902063264445704
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604245300879968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d87d489c55fc504987b709bbe1e4ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

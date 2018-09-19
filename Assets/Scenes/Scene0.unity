@@ -184,7 +184,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15596378}
   m_LocalRotation: {x: 0.14893135, y: 0, z: 0, w: 0.98884755}
-  m_LocalPosition: {x: 0, y: 4.73, z: -9.73}
+  m_LocalPosition: {x: 0.4, y: 3.96, z: -5.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -376,10 +376,11 @@ MonoBehaviour:
   prefabBridge: {fileID: 1536548355825170, guid: 6f309eb6327f90e47a4a3565f401c3dd,
     type: 2}
   player: {fileID: 634931305}
+  targets: []
   playerPosition: 0
   field: 
   timePassed: 0
-  secondsBeforeMove: 0
+  secondsBeforeMove: 2
   newPosition: {x: 0, y: 0, z: 0}
 --- !u!4 &1079024196
 Transform:

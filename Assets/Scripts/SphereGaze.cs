@@ -58,6 +58,6 @@ public class SphereGaze : MonoBehaviour {
             TimeBeforeSwitch = 0f;
         }
 
-        timeBeforeSwitchText.text = timeBeforeSwitch.ToString();
+        //timeBeforeSwitchText.text = timeBeforeSwitch.ToString();
 	}
 }
