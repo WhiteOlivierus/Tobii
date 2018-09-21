@@ -7,6 +7,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(GazeAware))]
 public class SphereGaze : MonoBehaviour {
 
+    public static LevelGenerator lg;
+
     private float timeBeforeSwitch;
 
     public float TimeBeforeSwitch {
@@ -16,6 +18,7 @@ public class SphereGaze : MonoBehaviour {
         set {
             if(timeBeforeSwitch > 0 && value <=  0) {
                 GetComponent<Renderer>().material.color = colorAfterSwitch;
+                lg.SetToEmpty(gameObject.transform.position);
                 if (gainPoints) {
                     GameManager.Points += 10;
                 }
@@ -43,6 +46,11 @@ public class SphereGaze : MonoBehaviour {
         GetComponent<Renderer>().material.color = colorBeforeSwitch;
         _gazeAware = GetComponent<GazeAware>();
         TimeBeforeSwitch = initTimeBeforeSwitch;
+
+        if (lg == null)
+        {
+            lg = GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>();
+        }
 	}
 	
 	// Update is called once per frame
