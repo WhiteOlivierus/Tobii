@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Tobii.Gaming;
+using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(GazeAware))]
+[RequireComponent (typeof (GazeAware))]
 public class SphereGaze : MonoBehaviour {
 
     public static LevelGenerator lg;
@@ -16,13 +16,12 @@ public class SphereGaze : MonoBehaviour {
             return timeBeforeSwitch;
         }
         set {
-            if(timeBeforeSwitch > 0 && value <=  0) {
-                GetComponent<Renderer>().material.color = colorAfterSwitch;
-                lg.SetToEmpty(gameObject.transform.position);
+            if (timeBeforeSwitch > 0 && value <= 0) {
+                GetComponent<Renderer> ().material.color = colorAfterSwitch;
+                lg.SetToEmpty (gameObject.transform.position);
                 if (gainPoints) {
                     GameManager.Points += 10;
-                }
-                else {
+                } else {
                     GameManager.Points -= 10;
                 }
             }
@@ -41,31 +40,28 @@ public class SphereGaze : MonoBehaviour {
 
     private GazeAware _gazeAware;
 
-	// Use this for initialization
-	void Start () {
-        GetComponent<Renderer>().material.color = colorBeforeSwitch;
-        _gazeAware = GetComponent<GazeAware>();
+    // Use this for initialization
+    void Start () {
+        GetComponent<Renderer> ().material.color = colorBeforeSwitch;
+        _gazeAware = GetComponent<GazeAware> ();
         TimeBeforeSwitch = initTimeBeforeSwitch;
 
-        if (lg == null)
-        {
-            lg = GameObject.Find("LevelGenerator").GetComponent<LevelGenerator>();
+        if (lg == null) {
+            lg = GameObject.Find ("LevelGenerator").GetComponent<LevelGenerator> ();
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(_gazeAware.HasGazeFocus)
-        {
+    }
+
+    // Update is called once per frame
+    void Update () {
+        if (_gazeAware.HasGazeFocus) {
             if (TimeBeforeSwitch > 0f)
                 TimeBeforeSwitch -= Time.deltaTime;
         }
 
-        if(TimeBeforeSwitch <= 0)
-        {
+        if (TimeBeforeSwitch <= 0) {
             TimeBeforeSwitch = 0f;
         }
 
         //timeBeforeSwitchText.text = timeBeforeSwitch.ToString();
-	}
+    }
 }

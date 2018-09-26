@@ -9,73 +9,73 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1092966427375790}
+  m_RootGameObject: {fileID: 1842963317409816}
   m_IsPrefabAsset: 1
---- !u!1 &1092966427375790
+--- !u!1 &1842963317409816
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4000383091958744}
+  - component: {fileID: 4607729893972990}
   m_Layer: 0
-  m_Name: bridge
+  m_Name: GenericCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1141953902426298
+--- !u!1 &1944263893456348
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4462447168913660}
-  - component: {fileID: 33487675610639916}
-  - component: {fileID: 23687576334992404}
+  - component: {fileID: 4949796997928846}
+  - component: {fileID: 33540585970669682}
+  - component: {fileID: 23388416146597168}
   m_Layer: 0
-  m_Name: pCube10
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4000383091958744
+--- !u!4 &4607729893972990
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1092966427375790}
-  m_LocalRotation: {x: -0, y: 0.70710576, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -0.12103772, y: 0.768, z: 6.6688437}
+  m_GameObject: {fileID: 1842963317409816}
+  m_LocalRotation: {x: -0.00003097951, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.7836576, y: -0.5, z: -2.1980643}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4462447168913660}
+  - {fileID: 4949796997928846}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
---- !u!4 &4462447168913660
+  m_LocalEulerAnglesHint: {x: -0.004, y: 0, z: 0}
+--- !u!4 &4949796997928846
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1141953902426298}
+  m_GameObject: {fileID: 1944263893456348}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: -0.020375848, z: -0.0000000033196468}
+  m_LocalPosition: {x: -0, y: -0.020375848, z: -0.000000003319647}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
-  m_Father: {fileID: 4000383091958744}
+  m_Father: {fileID: 4607729893972990}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23687576334992404
+--- !u!23 &23388416146597168
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1141953902426298}
+  m_GameObject: {fileID: 1944263893456348}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -85,9 +85,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 367837e7dce0cb741a7acf62aca07af2, type: 2}
-  - {fileID: 2100000, guid: a6ab8abf1e260b04082a76957eedd8c7, type: 2}
-  - {fileID: 2100000, guid: e7ed4195825b2064db3a86fee1656573, type: 2}
+  - {fileID: 2100000, guid: 6aefaacb648d6034fab847e5825122c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,10 +105,10 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33487675610639916
+--- !u!33 &33540585970669682
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1141953902426298}
-  m_Mesh: {fileID: 4300000, guid: 575c3e0588feb8a469e9e751d0b94686, type: 3}
+  m_GameObject: {fileID: 1944263893456348}
+  m_Mesh: {fileID: 4300000, guid: 82c2ceba2f85c9248a40b9bfe9afbf66, type: 3}
