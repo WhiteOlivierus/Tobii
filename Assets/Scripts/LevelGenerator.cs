@@ -95,7 +95,14 @@ public class LevelGenerator : MonoBehaviour {
         // Assign a random number (0, 1 or 2) to each int in the field. 0 = empty, 1 = blockade, 2 = walkable
         for (int i = 1; i < fieldWidth * fieldHeight; i++)
         {
-            field[i] = rnd.Next(0, 3);
+            if (i % fieldWidth != 0 && i % fieldWidth != fieldWidth - 1)
+            {
+                field[i] = rnd.Next(0, 3);
+            }
+            else
+            {
+                field[i] = 0;
+            }
             int widthNr = 0;
             if (!direction) { widthNr = i % fieldWidth; }
             else { widthNr = (fieldWidth - 1) - (i % fieldWidth); }
@@ -106,7 +113,7 @@ public class LevelGenerator : MonoBehaviour {
                 direction = !direction;
             }
 
-
+            
             if (field[i] == 1)
             {
                 allGameObjects.Add(Instantiate(prefabObstacle, new Vector3(widthNr, 0, heightNr), Quaternion.identity));
